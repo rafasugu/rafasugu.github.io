@@ -1,0 +1,40 @@
+
+.canales {
+    display: flex;
+    flex-direction: column; /*Column display*/
+    align-items: center; /* Align center */
+    padding: 20px; 
+}
+
+.canales-header {
+    text-align: center;
+    color: var(--gray-);
+}
+
+.canales-iconos {
+    display: flex;
+    justify-content: center; /* Horizontally center the icons */
+    align-items: center; /* Vertically center the icons */
+    flex-wrap: wrap;
+}
+
+.canales-iconos img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: 20px 60px 20px 60px; /* Add spacing around the images */
+}
+
+/* Responsive styles */
+@media (max-width: 1100px) {
+    .canales-iconos img{
+        margin: 30px; /* Adjust spacing for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .canales-iconos img {
+        max-width: 80%;
+        margin: 20px; /* Further adjust spacing for even smaller screens */
+    }
+}

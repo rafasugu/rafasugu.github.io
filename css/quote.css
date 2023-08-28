@@ -1,0 +1,78 @@
+/* Quote section styling */
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.quote-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    /*Box styling*/
+    border-radius: 16px;
+    border: 2px solid var(--light-gray-);
+
+    /* Drop Shadow/Small */
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+.quote-header {
+/* Add space below the header */
+    line-height: 2;
+    color: var(--dark-color-);
+}
+
+.quote-author {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.quote-author p {
+    line-height: 2;/* Add additional space between author info and paragraph */
+}
+
+/* Define the orange color */
+.quote-header span.quote-name {
+    color: var(--orange-color-); /* Change to your desired orange color value */
+}
+
+.quote-author img{
+    width: 200px;
+    height: auto;
+    color: var(--orange-color-);
+}
+
+/* Media query for responsive layout on mobile */
+@media (max-width: 768px) {
+    .quote-author img{
+        width: 150px;
+        height: auto;
+    }
+
+    .quote-header {
+        /* Add space below the header */
+            line-height: 1.2;
+    }
+
+
+    .quote-author p{
+        line-height: 1.2;
+    }
+
+    .quote-author {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+    }
+    
+}

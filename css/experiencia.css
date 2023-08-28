@@ -1,0 +1,45 @@
+/* Styling for the experience section */
+.experiencia {
+    display: flex;
+    flex-direction: column; /*Column display*/
+    align-items: center; /* Align center */
+    padding: 20px; 
+}
+
+.experiencia-header {
+    text-align: center;
+    color: var(--gray-);
+}
+
+.experiencia-image {
+    display: flex;
+    justify-content: center; /* Horizontally center the icons */
+    align-items: center; /* Vertically center the icons */
+    flex-wrap: wrap;
+}
+
+.experiencia img {
+    max-width: 100%; /* 100% imges size */
+    height: auto;
+    vertical-align: middle; /* Align images vertically */
+    margin: 20px 50px 10px 50px; /* Add spacing around the images */
+}
+
+
+/* Responsive styles */
+@media (max-width: 1100px) {
+    .experiencia img {
+        max-width: 90%; /* 100% imges size */
+        height: auto;
+        margin: 20px 30px; /* Adjust spacing for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .experiencia img {
+        max-width: 30%; /* 100% imges size */
+        margin: 10px; /* Further adjust spacing for even smaller screens */
+    }
+}
+
+

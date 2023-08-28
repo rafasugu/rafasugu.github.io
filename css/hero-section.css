@@ -1,0 +1,156 @@
+/* Styling for the hero section */
+.hero-section {
+    display: flex;
+    align-items:end; /* Align items to the end oh hero */
+    height: auto; /* Fit contents */
+    width: 100%; /* Set the width to 100% */
+    padding: 20px 10px;
+}
+
+/* Styling for the button */
+.btn-hero{
+    padding: 10px 20px;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color-);
+    text-align: center;
+    text-decoration: none;
+    width: 100%; /* Set the width to 80% */
+}
+
+.btn-hero:hover {
+    transform: scale(1.1); /* Enlarge the icon on hover */
+}
+
+/* Styling for the left column (icons+content) */
+.left {
+    display: flex;
+    flex-direction:row ; /* Row orientation */
+    gap: 20px; /* Gap between icons and Content */
+    margin-right: 20px; /* Margint rigth*/
+}
+
+/* Styling for the left column (icons) */
+.left .hero-iconos {
+    display: flex;
+    flex-direction: column; /*Display as column*/
+    justify-content: center; /* Center items vertically */
+    align-items:flex-start; /*Start of the div: to the left*/
+    gap: 20px; /* Gap between icons */
+}
+
+.left .hero-iconos img{
+    width: 30px; /*width of image*/
+    height: auto;
+    color: white;
+}
+
+.hero-iconos a img:hover {
+    transform: scale(1.2); /* Enlarge the icon on hover */
+}
+
+/* Styling for the content column */
+.left .hero-content {
+    display: flex;
+    flex-direction: column; /* display as column */
+    margin-left: 10px; /* Add margin to separate from icons */
+}
+
+.left .hero-content h1 {
+    margin: 10px 0; /* Add margin at the top */
+    color: var(--dark-color-);
+}
+.left .hero-content h1 span.hero-emphasis{
+    color: var(--orange-color-); /* Change the color of "Digital" to your desired blue color */
+}
+.left .hero-content p{
+    margin-bottom: 20px; /* Margin bottom*/
+    line-height: 1.5;
+}
+
+/* Styling for the right column */
+.right {
+    display: flex;
+    align-self: flex-end;  /* Align image to the end*/
+    justify-content: flex-end; /* Align image to the bottom right of the container */
+}
+
+.right img {
+    max-width: 100%; /* Image 100% */
+    height: auto;
+    vertical-align: middle; /* Align vertically */
+}
+
+/* Media query for responsive layout on tablet*/
+
+@media (max-width:1100px){
+    .hero-section {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+        justify-content:end;
+        width: 100%;
+    }    
+
+    .hero-section .left{
+        width: 100%;
+        display: flex;
+        margin: 0; /*restart margin*/
+        flex-direction: column;
+    }
+
+    /* Reduce the margin of the content */
+    .left .hero-content {
+        align-items: center;
+        margin: 0; /*restart margin*/
+        margin-bottom: 20px; /* Add some margin at the top */
+    }
+    
+    /* Styling for the left column (icons) */
+    .left .hero-iconos {
+        display: none;
+    }
+    
+    .right {
+        display: flex;
+        align-self:center;
+        vertical-align: bottom;
+    }
+    
+ }
+
+/* Media query for responsive layout on mobile */
+@media (max-width: 768px) {
+
+    /* Styling for the button */
+.btn-hero{
+    font-size: 18px;
+}
+    .hero-section {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 20px; /* Adjust gap for smaller screens */
+        padding: 20px 0px;
+    }
+
+    .left,
+    .right {
+        flex-basis: 100%; /* Make both sections take up full width */
+    }
+
+    .left {
+        flex-direction: column; /* Stack content below icons */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .right {
+        align-items: center; /* Center image horizontally */
+        margin-top: 20px; /* Add margin to separate from left section */
+    }
+
+    .left .hero-iconos {
+        display: none; /* Hide the iconos section */
+    }
+
+}
+  

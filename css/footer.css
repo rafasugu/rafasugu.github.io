@@ -1,0 +1,47 @@
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(30, 50, 92, 0.1) 100%);
+    color: var(--body-text-); /* Set text color to body */
+    padding: 40px 0; /* Add padding to the footer */
+    gap: 32px;
+}
+
+.sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.sociales a img {
+    height: 40px;
+    width: auto;
+}
+
+.sociales a img:hover {
+    transform: scale(1.2); /* Enlarge the icon on hover */
+}
+
+.Copyright {
+    color: var(--body-text-);
+    font-size: 14px;
+}
+
+
+
+/* Media query for screens with max width of 800px (for mobile) */
+@media (max-width:768px){
+    
+    .sociales a img {
+        height: 30px;
+        width: auto;
+    }
+
+}
+
+
+

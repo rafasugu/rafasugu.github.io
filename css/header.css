@@ -1,0 +1,14 @@
+@import "nav.css";
+@import "hero-section.css";
+
+header {
+    display: flex;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(30, 50, 92, 0.05) 100%);
+    padding: 20px 0; /*20px top&bottom*/
+    justify-content: center;
+}
+
+
+
+
+  

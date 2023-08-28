@@ -1,0 +1,130 @@
+.trabajos{
+    display: flex;
+    flex-direction: column; /*display as column*/
+    justify-content: center; /*content on center of wrapper vertically*/
+    align-items: center; /*align center horizontally*/
+    gap: 20px; /*gap between items*/
+    padding: 20px;
+}
+
+.trabajos-header{
+    display: flex; /*to use flex properties*/
+    flex-direction: column; /*display as column*/
+    justify-content: center; /*align center vertically*/
+    gap: 10px; /*gap between items*/
+}
+
+.trabajos-header {
+    color: var(--body-tex-);
+    text-align: center; /*Align text center*/
+}
+
+.trabajos-header h3{
+    color: var(--light-blue-);
+}
+
+.trabajos-header span {
+    color: var(--primary-color-); /*Change color*/
+}
+
+.caso {
+    display: flex;
+    padding: 20px;/*padding of 20 px*/
+    gap: 20px; /*Gap between items*/
+    justify-content: center; /*Center horizontally*/
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Apply hover effect to caso-desc div */
+.caso:hover .caso-desc {
+    background-color: var(--light-gray-); /* Change background color on hover */
+    border-radius: 16px;
+}
+
+
+.caso img{
+    border-radius: 16px;
+    /* Drop Shadow/Small */
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+.caso img:hover{
+    transform: scale(1.1); /* Enlarge the icon on hover */
+}
+
+.caso-desc{
+    display: flex;
+    flex-direction: column; /*Dsiplays as a column*/
+    gap: 20px; /*gap between items*/
+    padding: 20px; /*padding 20px*/
+    justify-content: center; /*center Horizontally*/
+}
+
+.caso-title{
+    color: var(--primary-color-);
+}
+
+.caso-text h3{
+    color: var(--body-text-);
+    font-size: 24px;
+}
+
+.caso-spec{
+    display: flex; /*To use flex properties*/
+    align-items: center; /*Center vertically*/
+    gap: 20px;
+}
+
+.caso-año{
+    display: flex;
+    color: white; /*Color white*/
+    padding: 10px 20px; /*Padding of 10px*/
+    align-items: flex-start; /*Align to the left*/
+    /*Style of background*/
+    border-radius: 16px;
+    background: var(--primary-color-);
+}
+
+.caso-objetivo{
+    color: var(--gray-);
+    font-weight: 600;
+}
+
+
+/* Media query for screens with max width of 800px (for mobile) */
+@media (max-width:800px){
+    
+    .trabajos{
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .caso {
+        padding: 0px;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .caso-portada {
+        margin: 0 auto;
+    }
+
+    /* Limit the max-width of the image on smaller screens */
+    .caso img {
+        max-width: 100%; /* Add this line to limit the image size */
+        height: auto; /* Ensure the image maintains its aspect ratio */
+    }
+
+
+    .caso-desc{
+        order: -1;
+    }
+
+    .caso-text {
+        display: none;
+    }
+}
