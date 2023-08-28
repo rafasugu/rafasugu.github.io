@@ -152,6 +152,13 @@ li:hover .trabajos-dropdown-menu {
     text-decoration: none;
 }
 
+nav.sticky .trabajos-dropdown-menu a{
+    color: var(--primary-color-);
+}
+
+nav.sticky .trabajos-dropdown-menu a:hover{
+    color: white;
+}
 
 
 /* Media query for responsive layout on mobile */
