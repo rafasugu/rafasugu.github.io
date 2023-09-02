@@ -201,6 +201,10 @@ nav.sticky ul li a {
     padding: 10px 30px 10px 20px;
 }
 
+.mobile-nav.sticky .icon-menu {
+    filter: brightness(0) invert(1); /* Change color on sticky */
+}
+
 /* Media query for responsive layout on mobile */
 
 @media (max-width:1100px){
