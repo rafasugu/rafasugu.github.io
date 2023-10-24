@@ -78,8 +78,8 @@
 }
 
 .right img {
-    max-width: 100%; /* Image 100% */
-    height: auto;
+    max-width: auto; /* Image 100% */
+    height: 400px;
     vertical-align: middle; /* Align vertically */
 }
 
